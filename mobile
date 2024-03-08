@@ -1,1 +1,339 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width-device-width, initial-scale=1.0">
+    <style>
+        .body {
+        position: relative;
+        width: 392px;
+        height: 1108px;
+        align-content: center;
+    
+        background: #F4F4F4;
+        }
+    
+        .background_img {
+         /* Background Home Page Pink Out Group Photo */
 
+        position: absolute;
+        width: 392px;
+        height: 664px;
+        left: 0px;
+        top: 130px;
+        background-repeat: no-repeat;
+        object-fit: none;
+        object-position: 70%;
+        opacity: 0.1;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+         }
+
+        /* Menu Bar */
+    
+        .menu_bar {
+            /* Menu Bar Transparent */
+        position: absolute;
+        width: 392px;
+        height: 101px;
+        left: 0px;
+        top: 0px;
+
+        background: linear-gradient(90deg, rgba(7, 30, 90, 0.79) 43.63%, rgba(77, 188, 190, 0.79) 80.87%);
+        box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+        }
+
+        .socialinsta{
+        /* Social_Buttons-removebg-preview 2 */
+
+        position: absolute;
+        width: 41px;
+        height: 41px;
+        left: 117px;
+        top: 590px;
+        }
+    
+        .socialfacebook{
+        /* Social_Buttons-removebg-preview 1 */
+
+        position: absolute;
+        width: 41px;
+        height: 41px;
+        left: 178px;
+        top: 590px;
+        }
+
+        .socialyoutube{
+            /* Social_Buttons-removebg-preview 3 */
+        position: absolute;
+        width: 41px;
+        height: 41px;
+        left: 239px;
+        top: 590px;
+        }
+    
+        /* The premiere youth travel lacrosse 501c organization for Brunswick County, North Carolina. */
+    
+        p.main_text {
+        position: absolute;
+        width: 359px;
+        height: 40px;
+        left: 17px;
+        top: 638px;
+    
+        font-family: 'Encode Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+    
+        color: #000D35;
+        }
+
+        /* wildtide_lacrosse_wording_image-removebg-preview 1 */
+
+        .wildtidename {
+        position: absolute;
+        width: 301px;
+        height: 110px;
+        left: 50px;
+        top: 459px;
+        object-fit: contain;
+        }
+
+        .button_gradient {
+            /* Rectangle 2 */
+
+        position: absolute;
+        width: 340px;
+        height: 47px;
+        left: 25px;
+        top: 706px;
+
+        background: linear-gradient(90deg, #071E5A 0%, #4DBCBE 100%);
+        box-shadow: 0px 4px 4px #010E34;
+        border-radius: 10px;
+        }
+
+        /* Register for 2024 Season */
+        .buttontext{
+        position: absolute;
+        width: 224px;
+        height: 20px;
+        left: 83px;
+        top: 720px;
+
+        font-family: 'Encode Sans';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        /* identical to box height */
+        text-align: center;
+        letter-spacing: 0.09em;
+
+        color: #FFFFFF;
+        }
+
+        .logo {
+
+        /* WildTide Logo Color 1 */
+        position: absolute;
+        width: 109px;
+        height: 119px;
+        left: 142px;
+        top: 22px;
+        }
+
+        .waveright{
+        position: absolute;
+        width: 185px;
+        height: 131px;
+        left: 207px;
+        top: 0px;
+        opacity: 50%;
+        }
+
+        .waveleft{
+        /* wave_png-removebg-preview 3 */
+
+        position: absolute;
+        width: 185px;
+        height: 20px;
+        left: 0px;
+        top: 81px;
+        opacity: 50%;
+        object-fit: none;
+        }
+
+        .hamburgermenu{
+            /* Menu Scrolling */
+
+        position: absolute;
+        width: 35px;
+        height: 20px;
+        left: 316px;
+        top: 55px;
+
+        filter: drop-shadow(0px 4px 4px #4DBCBE);
+        border-radius: 2px;
+        }
+        /* Menu Top */
+        
+        .menushapetop{
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 0%;
+        bottom: 80%;
+
+        background: #010E34;
+        }
+        /* Menu Bottom */
+        .menushapebottom{
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 80%;
+        bottom: 0%;
+
+        background: #010E34;
+        }
+
+        .menushapemiddle{
+        /* Menu Middle */
+        position: absolute;
+        left: 0%;
+        right: 0%;
+        top: 40%;
+        bottom: 40%;
+
+        background: #010E34;
+        }
+
+        .girlmainpage{
+        /* WildTide Girls Home Page Image 1 */
+        position: absolute;
+        width: 266px;
+        height: 318px;
+        left: 102px;
+        top: 150px;
+        object-fit: cover;
+        }
+
+        .boymainpage{
+        /* WildTide Boys Home Page Image 1 */
+        position: absolute;
+        width: 271px;
+        height: 272px;
+        left: 0px;
+        top: 196px;
+        object-fit: cover;
+        }
+
+        .bodytextplaywithus{
+        /* Come play with us! WildTide provides the opportunity for girls and boys to play lacrosse - ranging from the first time you hold a stick to opportunities for college recruitment. */
+
+        position: absolute;
+        width: 359px;
+        height: 40px;
+        left: 13px;
+        top: 793px;
+
+        font-family: 'Encode Sans';
+        font-style: normal;
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 20px;
+        text-align: center;
+
+        color: #000D35;
+        }
+
+        .supportyou{
+        /* we_support_you_text_pink_cursive-removebg-preview 1 */
+
+        position: absolute;
+        width: 259px;
+        height: 90px;
+        left: 65px;
+        top: 944px;
+        }
+
+        .ellipse{
+        /* Ellipse 5 */
+
+        position: absolute;
+        width: 167px;
+        height: 167px;
+        left: 130px;
+        top: 1058px;
+        border-radius: 50%;
+
+        background: #071E5A;
+        box-shadow: 0px 4px 4px #000000;
+        /* GIRLS */
+
+        font-family: 'Encode Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 38px;
+        text-align: center;
+
+        color: #FFFFFF;
+        }
+        /* standing white HS photo 1 */
+
+        .standinggirl{
+        box-sizing: border-box;
+
+        position: absolute;
+        width: 121px;
+        height: 218px;
+        left: 148px;
+        top: 1045px;
+        filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+        }
+
+    </style>    
+</head>
+<body class="body">
+    <div>
+        <menu_bar class="menu_bar"></menu_bar>
+        <img src="wave_png-removebg-preview.png" class="waveright">
+        <img src="waveleft.png" class="waveleft">
+        <img src="wildtidelogo.png" class="logo">
+        <div>
+            <hamburgermenu class="hamburgermenu">
+                <menushapetop class="menushapetop"></menushapetop>
+                <menushapemiddle class="menushapemiddle"></menushapemiddle>
+                <menushapebottom class="menushapebottom"></menushapebottom>
+            </hamburgermenu>
+        </div>
+    </div>
+    <div>
+        <img src="background.jpg" class="background_img">
+    </div>  
+    <div>
+        <img src="boymainpage.png" class="boymainpage">
+        <img src="girlmainpage.png" class="girlmainpage">
+    </div>
+    <div>
+        <img src="wildtide_lacrosse_wording_image-removebg.png" class="wildtidename">
+    </div>
+    <div>
+        <img src="socialbutton-instagram.png" class="socialinsta">
+        <img src="socialbutton-facebook.png" class="socialfacebook">
+        <img src="socialbutton-youtube.png" class="socialyoutube">
+    </div>
+    <div>
+        <button_gradient class="button_gradient buttontext">Register for 2024 Season</button_gradient>
+    </div>
+    <p class="main_text">The premiere youth travel lacrosse 501c organization for Brunswick County, North Carolina.</p>
+    <p class="bodytextplaywithus">Come play with us!<br><br> WildTide provides the oppurtunity for firls and boys to play lacrosse - ranging from the first time you hold a stick to oppurtunities for college recruitment</p>
+    <img src="wesupportyoupink.png" class="supportyou">
+    <div>
+        <girlsellipse class="ellipse">GIRLS</girlsellipse>
+        <img src="girlstandingcircle.png" class="standinggirl">
+    </div>
+</body>

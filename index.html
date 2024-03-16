@@ -2,9 +2,15 @@
 <html>
     <head>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <style>                
+        <style>   
+            html, body {
+                width: 100%;
+                padding-left: 0px;
+                padding-top: 0px;
+                background: #F5F5F5;
+            }
             .headerBar {
-                float: left;
+                position: absolute;
                 width: 100%;
                 height: 11vw;
                 left: 0px;
@@ -15,10 +21,10 @@
             }
 
             .headerBarImage {
-                float: left;
+                position: absolute;
                 width: 100%;
                 height: 11vw;
-                opacity: 0.1;
+                opacity: 0.3;
             }
 
             .logo {
@@ -28,239 +34,59 @@
                 top: 15px;
             }
 
-            /*.menu {}*/
-
             .backgroundImage {
                 position: absolute;
                 width:100%;
                 left: 0%;
-                top: 12vw;
+                top: 11vw;
                 background-repeat: no-repeat;
                 object-fit: cover;
                 object-position: 70%;
                 opacity: 0.1;
                 filter: drop-shadow(px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
             }
-            
-            .wildTideWords{
-                position: absolute;
-                width: 30.90vw;
-                left: 35.5vw;
-                top: 36vw;
-                object-fit: contain;
-            }
 
-            .registerButton {
-                position: absolute;
-                width: 21.73vw;
-                left: 75vw;
-                top: 13.5vw;
-
-                background: linear-gradient(90deg, #071E5A 0%, #4DBCBE 100%);
-                box-shadow: 0px 4px 4px #010E34;
-                border-radius: 5px;
-
+            .underConstructionMessage {
                 font-family: 'Encode Sans';
                 font-style: normal;
                 font-weight: 700;
-                font-size: 1.4vw;
-                line-height: 25px;
+                font-size: 1.5vw;
+                line-height: 3.5vw;
                 text-align: center;
-                padding-top: 3px;
-                padding-bottom: 3px;
                 letter-spacing: 0.09em;
 
-                color: #FFFFFF;
+                color: navy;
+            }
+
+            .underMessage {
+                position: absolute;
+                width: 70vw;
+                top: 20vw;
+                left: 15vw;
             }
 
             .socialButtonsFacebook {
                 position: absolute;
-                width: 41px;
-                height: 41px;
-                left: 37.5vw;
-                top: 68vw;
-            }
-
-            .socialButtonsYoutube {
-                position: absolute;
-                width: 41px;
-                height: 41px;
-                left: 46.5vw;
-                top: 68vw;
+                width: 3vw;
+                height: 3vw;
+                left: 47vw;
+                top: 45vw;
             }
 
             .socialButtonsInsta {
                 position: absolute;
-                width: 41px;
-                height: 41px;
-                left: 56vw;
-                top: 68vw;
+                width: 3vw;
+                height: 3vw;
+                left: 53vw;
+                top: 45vw;
+
             }
 
-            .mainPageText {
-                position: absolute;
-                width: 35.9vw;
-                height: 4.0vw;
-                left: 33vw;
-                top: 50vw;
-
-                font-family: 'Encode Sans';
-                font-style: normal;
-                font-weight: 400;
-                font-size: 1.2vw;
-                line-height: 20px;
-                text-align: center;
-
-                color: #000D35;
-            }
-
-            .connectWithUsButton {
-                position: absolute;
-                width: 21.73vw;
-                left: 38.2vw;
-                top: 62vw;
-
-                background: linear-gradient(90deg, #071E5A 0%, #4DBCBE 100%);
-                box-shadow: 0px 4px 4px #010E34;
-                border-radius: 10px;
-                
-                font-family: 'Encode Sans';
-                font-style: normal;
-                font-weight: 700;
-                font-size: 1.4vw;
-                line-height: 25px;
-                text-align: center;
-                padding-top: 3px;
-                padding-bottom: 3px;
-                letter-spacing: 0.09em;
-
-                color: #FFFFFF;
-            }
-
-            .boyImage {
-                position: absolute;
-                width: 33%;
-                left: 62vw;
-                padding-top: 24vw;
-                object-fit: cover;
-            }
-
-            .girlImage {
-                position: absolute;
-                width: 33%;
-                left: 10px;
-                padding-top: 17%;
-                object-fit: cover;
-            }
-
-            @media screen and (max-width: 800px){
-                .headerBar {
-                    width: 100vw;
-                    height: 24vw;
-                    left: 0px;
-                    top: 0px;
-
-                    background: linear-gradient(90deg, rgba(7, 30, 90, 0.79) 43.63%, rgba(77, 188, 190, 0.79) 80.87%);
-                    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-                }
-
-                .headerBarImage{
-                    height: 90px;
-                }
-
-                .backgroundImage {
-                    width: 350vw;
-                    left: -208vw;
-                    right: 0vw;
-                    top: 55vw;
-                    background-repeat: no-repeat;
-                    background-size: contain;
-                    object-position: 70%;
-                    opacity: 0.1;
-                    filter: drop-shadow(px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
-                }
-                
-                .logo{
-                    left: 38vw;
-                    min-width: 180px;
-                    top: 8vw;
-                }
-
-                .wildTideWords {
-                    width: 70vw;
-                    top: 110vw;
-                    left: 15vw;
-                }
-
-                /*.menu{}*/
-                .socialButtonsFacebook {
-                    position: absolute;
-                    width: 41px;
-                    height: 41px;
-                    left: 37.5vw;
-                    top: 140vw;
-                }
-
-                .socialButtonsYoutube {
-                    position: absolute;
-                    width: 41px;
-                    height: 41px;
-                    left: 46.5vw;
-                    top: 140vw;
-                }
-
-                .socialButtonsInsta {
-                    position: absolute;
-                    width: 41px;
-                    height: 41px;
-                    left: 56vw;
-                    top: 140vw;
-                }
-                .registerButton{
-                    width: 80vw;
-                    left: 8vw;
-                    top: 190vw;
-                    font-size: 4.5vw;
-                    padding-top: 3.5vw;
-                    padding-bottom: 3.5vw;
-                }
-
-                .mainPageText{
-                    width: 80vw;
-                    left: 7vw;
-                    top: 147vw;
-                    font-size: 3.8vw;
-                    padding-top: 3px;
-                    padding-bottom: 3px;
-                    letter-spacing: 0.09em;
-                }
-
-                .connectWithUsButton{
-                    width: 80vw;
-                    left: 8vw;
-                    top: 170vw; 
-                    font-size: 4.5vw;
-                    padding-bottom: 3.5vw;
-                    padding-top: 3.5vw;
-                }
-
-                .boyImage{
-                    width: 70%;
-                    left: 0vw;
-                    top: 23vw;
-                }
-
-                .girlImage{
-                    width: 67%;
-                    left: 28vw;
-                    top: 18vw;
-                }
-            }
         </style>
     </head>
     <body>
         <div class="headerBar">
-            <img src="wave_png-removebg-preview.png" class="headerBarImage">
+            <img src="wave_banner-removebg-preview.png" class="headerBarImage">
         </div>
         <div>
             <img src="background.jpg" class="backgroundImage">
@@ -269,23 +95,14 @@
             <img src="logo.png" class="logo">
         </div>
         <div>
-            <button-gradient class="registerButton">Register for 2024 Season</button-gradient>
+            <p class="underConstructionMessage underMessage">Get excited!!! <br/> Site under construction: WildTide is dedicated to supporting its players, families, and community with the best possible website. <br/>
+            We are currently working hard to update the site. Please check back soon for new changes and Summer 2024 Registration Info. You can also connect with us for updates and information on our Instagram and Facebook accounts.</p>
         </div>
-        <div>
-            <img src="boymainpage.png" class="boyImage">
-            <img src="girlmainpage.png" class="girlImage">
-            <img src="wildtide_lacrosse_wording_image-removebg.png" class="wildTideWords">
-        </div>
-        <div>
-            <p class="mainPageText">The premiere youth travel lacrosse organization for Brunswick County, North Carolina.</p>
-        </div>
-        <div class="socialButtonsBar">
+        <a href="https://www.facebook.com/profile.php?id=61555624635626">
             <img src="socialbutton-facebook.png" class="socialButtonsFacebook">
+        </a>
+        <a href="https://www.instagram.com/wildtidelax?igsh=MThpcXQ1bTEzbXA1aw==">
             <img src="socialbutton-instagram.png" class="socialButtonsInsta">
-            <img src="socialbutton-youtube.png" class="socialButtonsYoutube">
-        </div>
-        <div>
-            <button-gradient class="connectWithUsButton">Connect with Us</button-gradient>
-        </div>
+        </a>
     </body>
 </html>

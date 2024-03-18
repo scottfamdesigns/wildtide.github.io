@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <style>   
+            html, body {
+                width: 100%;
+                padding-left: 0px;
+                padding-top: 0px;
+                background: #F5F5F5;
+            }
+
+            .headerBar {
+                position: fixed;
+                width: 100%;
+                height: 10vw;
+                left: 0px;
+                top: 0px;
+                z-index: 100;
+
+                background: linear-gradient(90deg, rgba(7, 30, 90, 0.79) 43.63%, rgba(77, 188, 190, 0.79) 80.87%);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+
+            .headerBarImage {
+                position: absolute;
+                width: 100%;
+                height: 10vw;
+            }
+
+            .logo {
+                position: absolute;
+                width: 12.50%;
+                left: 8vw;
+                top: .80vw;
+            }
+
+            .backgroundImage {
+                position: absolute;
+                width: 100%;
+                height: 53vw;
+                top: 10vw;
+                left: 0vw;
+                background-repeat: no-repeat;
+                object-fit: fill;
+                object-position: 70%;
+                filter: drop-shadow(px 4px 4px rgba(0, 0, 0, 0.25)) drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+            }
+
+            .heroImageSection {
+                position: absolute;
+                width: 100%;
+                left: 0px;
+                top: -.5vw;
+            }
+
+            .registerButton {
+                position: absolute;
+                width: 21.73vw;
+                left: 75vw;
+                top: 13.5vw;
+
+                background: linear-gradient(90deg, #071E5A 0%, #4DBCBE 100%);
+                box-shadow: 0px 4px 4px #010E34;
+                border-radius: 5px;
+
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 700;
+                font-size: 1.4vw;
+                text-align: center;
+                text-decoration: none;
+                padding-top: 1vw;
+                padding-bottom: 1vw;
+                letter-spacing: 0.09em;
+                z-index: 100;
+
+                color: #FFFFFF;
+            }
+
+            .girlsTeamMainImage {
+                position: absolute;
+                width: 96vw;
+                left: 2vw;
+                top: 14vw;
+
+            }
+
+            .socialButtonsInsta {
+                position: absolute;
+                width: 2vw;
+                height: 2vw;
+                left: 46vw;
+                top: 55vw;
+            }
+
+            .socialButtonsFacebook {
+                position: absolute;
+                width: 2vw;
+                height: 2vw;
+                left: 50vw;
+                top: 55vw;
+            }
+
+            .mainBodyText {
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1.3vw;
+                line-height: 20px;
+                text-align: left;
+                letter-spacing: 0.09em;
+
+                color: #000D35;
+            }
+
+            .moreThanLacrosseSection {
+                position: absolute;
+                width: 100%;
+                top: 67vw;
+                left: 0px;
+            }
+
+            .whereYouBelongSection {
+                position: absolute;
+                width: 100%;
+                left: 0px;
+                top: -24vw;
+            }
+
+            .moreThanLacrosseImages {
+                position: absolute;
+                width: 94vw;
+                left: 2vw;
+            }
+
+            .moreThanDescription {
+                position: absolute;
+                width: 29vw;
+                left: 57.7vw;
+                top: 17vw;
+            }
+
+            .whereYouBelongBar {
+                position: absolute;
+                width: 100%;
+                height: 9vw;
+                left: 0vw;
+                top: 144.4vw;
+
+                opacity: .5;
+
+                background: linear-gradient(90deg, rgba(7, 30, 90, 0.79) 43.63%, rgba(77, 188, 190, 0.79) 80.87%);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+
+            .whereYouBelongHuddle {
+                position: absolute;
+                width: 100%;
+                left: 0vw;
+                top: 144.4vw;
+                filter: brightness(180%)
+            }
+
+
+            .whereYouBelongBackground {
+                position: absolute;
+                width: 100%;
+                height: 237.75vw;
+                left: 0vw;
+                top: 144.4vw;
+                opacity: .5;
+            }
+
+            .whereYouBelongBackgroundGrass {
+                position: absolute;
+                width: 100%;
+                left: 0vw;
+                top: 213vw;
+            }
+
+            .whereYouBelongBackgroundGrass2 {
+                position: absolute;
+                width: 100%;
+                left: 0vw;
+                top: 270.25vw;
+            }
+            
+            .whereYouBelongBackgroundGrass3 {
+                position: absolute;
+                width: 100%;
+                left: 0vw;
+                top: 323.85vw;
+            }
+
+           .whereYouBelongImages {
+                position: absolute;
+                width: 90vw;
+                left: 5vw;
+                top: 147vw;
+           }
+
+           .footerBar {
+                position: absolute;
+                width: 100%;
+                height: 8vw;
+                left: 0px;
+                top: 358.15vw;
+
+                background: linear-gradient(90deg, rgba(7, 30, 90, 0.79) 43.63%, rgba(77, 188, 190, 0.79) 80.87%);
+                box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+            }
+
+            .footerImage{
+                position: absolute;
+                width: 13vw;
+                left: 10vw;
+                top: 2.25vw;
+            }
+
+            .footerText{
+                position: absolute;
+                width: 50vw;
+                left: 25vw;
+                top: .5vw;
+                
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 400;
+                font-size: 1vw;
+                line-height: 1.5vw;
+                text-align: center;
+
+                color: #FFFFFF;
+            }
+
+            .schoolText{
+                font-family: 'Encode Sans';
+                font-style: normal;
+                font-weight: 200;
+                font-size: 2vw;
+                line-height: 3vw;
+                text-align: center;
+
+                color: #FFFFFF;
+
+                text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.92);  
+            }
+
+            .highSchoolText{
+                position: absolute;
+                width: 50vw;
+                left: 36vw;
+                top: 178vw;
+            }
+
+            .middleSchoolText{
+                position: absolute;
+                width: 50vw;
+                left: 10vw;
+                top: 246vw;
+            }
+
+            .developText{
+
+                position: absolute;
+                width: 50vw;
+                left: 36vw;
+                top: 310vw;
+            }
+
+            
+
+            </style>
+    </head>
+    <body>
+        <div class="headerBar">
+            <img src="waveBanner.png" class="headerBarImage">
+            <a href="testIndex.html">
+                <img src="logo.png" class="logo">
+            </a>
+        </div>
+        <div class="heroImageSection">
+            <a href="https://google.com" class="registerButton">Register for 2024 Season</a>
+            <img src="programPagesBackground.png" class="backgroundImage">
+            <img src="girlsTeamMainImage.png" class="girlsTeamMainImage">
+            <a href="https://www.instagram.com/wildtidelax?igsh=MThpcXQ1bTEzbXA1aw==">
+                <img src="socialbutton-instagram.png" class="socialButtonsInsta">
+            </a>
+            <a href="https://www.facebook.com/profile.php?id=61555624635626">
+            <img src="socialbutton-facebook.png" class="socialButtonsFacebook">
+            </a>
+        </div>
+        <div class="moreThanLacrosseSection">
+            <img src="moreThanLacrosseImages.png" class="moreThanLacrosseImages">
+            <p class="mainBodyText moreThanDescription">WildTide is Family. Support goes beyond the field, developing not only college level lacrosse skill and techniques, but also a player’s work ethic and core values. Players are the the number one priority... winning the tournament is great, winning in life is priceless.</p>
+        </div>
+        <div class="whereYouBelongSection">
+            <img src="whereYouBelongHuddle.png" class="whereYouBelongHuddle">
+            <img src="whereYouBelongBackgroundGrass.png" class="whereYouBelongBackgroundGrass">
+            <img src="whereYouBelongBackgroundGrass.png" class="whereYouBelongBackgroundGrass2">
+            <img src="whereYouBelongBackgroundGrass.png" class="whereYouBelongBackgroundGrass3">
+            <img src="whereYouBelongBackground.png" class="whereYouBelongBackground">
+            <a class="whereYouBelongBar"></a>
+            <img src="whereYouBelongImages.png" class="whereYouBelongImages">
+            <p class="highSchoolText schoolText"><strong>HIGH SCHOOL</strong><br/>(Rising 9-12th grade)<br/><br/><strong>SPRING/SUMMER SEASON</strong><br/>
+                April 28th - July 13th<br/><br/><strong>PRACTICE TIMES</strong><br/>Sundays 4pm - 6pm<br/>
+                    Wednesdays 5:30pm - 7:30pm<br/><br/><strong>LOCATION</strong><br/>West Brunswick High School<br/>Shallotte, NC<br/><br/>
+                    <strong>DIRECTOR OF GIRLS PROGRAM</strong><br/>
+                    <strong>HEAD COACH</strong><br/>
+                    “Coach Rebecca” (Rebecca Allen)</p>
+            <p class="middleSchoolText schoolText"><strong>MIDDLE SCHOOL</strong><br/>
+                (Rising 5-8th grade)<strong><br/><br/><strong>SPRING/SUMMER SEASON</strong><br/>      
+                April 28th - July 13th<br/><br/>PRACTICE TIMES</strong><br/>Sundays 3:30 - 5pm<br/>
+                Wednesdays 5:30pm - 7:30pm<br/><br/><strong>LOCATION</strong><br/>
+                West Brunswick High School<br/>
+                Shallotte, NC<br/><br/><strong>HEAD COACH</strong><br/>
+                “Coach Jess” (Jessica Schroeder)</p>
+            <p class="developText schoolText"><strong>DEVELOPMENTAL PROGRAM</strong><br/>
+                (K-4th grade)<strong><br/><br/><strong>SPRING/SUMMER SEASON</strong><br/>      
+                April 28th - June 9th<br/><br/>PRACTICE TIMES</strong><br/>Sundays 3pm - 4pm<br/><br/><strong>LOCATION</strong><br/>
+                West Brunswick High School<br/>
+                Shallotte, NC<br/><br/><strong>ABOUT</strong><br/>
+                Beginner introduction to lacrosse<br/>
+                Players must have a mouth guard<br/>
+                Sticks and Goggles Provided</p>
+        </div>
+        <div class="footerBar">
+            <img src="footerWildTideImage.png" class="footerImage">
+            <p class="footerText">WildTide Lacrosse is part of the Brunswick County Youth Council -  a 501(c)(3) nonprofit organization. <br/></p>
+            <p class="footerText" style="top: 3vw;">Copyright 2024 © WildTide Lacrosse <br/> All Rights Reserved.</p>
+        </div>
+    </body>
+</html>
